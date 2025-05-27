@@ -863,7 +863,7 @@ nav {
 
 nav a {
   color: rgba(255, 255, 255, 0.688);
-  padding-inline: 0.7rem;
+  padding-inline: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.3rem;
   display: inline-block;
@@ -874,7 +874,7 @@ nav a {
 }
 
 .nav-links:hover {
-  padding: 0.3rem 1.5rem;
+  padding: 0.3rem 1.4rem;
   width: auto;
   max-width: 800px;
 }
@@ -886,8 +886,13 @@ nav a {
 
 .nav-links a:hover {
   transform: scale(1.2);
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 1.3rem;
   color: white;
+}
+
+.nav-links a:hover i {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.308));
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.389);
 }
 
 nav a[data-tooltip]::before {
