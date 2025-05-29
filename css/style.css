@@ -29,6 +29,8 @@
   --color-secondary: #333333;
   --color-border: rgba(0, 0, 0, 0.1);
   --color-accent: #000000;
+  --color-selection-bg: #000000;
+  --color-selection-text: #ffffff;
   --card-bg: #ffffff;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
@@ -55,8 +57,23 @@
   --color-secondary: #dddddd;
   --color-border: rgba(255, 255, 255, 0.1);
   --color-accent: #ffffff;
+  --color-selection-bg: #ffffff;
+  --color-selection-text: #111111;
   --card-bg: #222222;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Selection Styling */
+::selection {
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+::-moz-selection {
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 body {
