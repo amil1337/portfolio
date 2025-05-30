@@ -535,7 +535,7 @@ a:hover {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0.5rem;
   list-style: none;
   margin-top: var(--space-sm);
 }
@@ -547,13 +547,13 @@ a:hover {
   border-radius: 30px;
   font-size: var(--text-xs);
   font-weight: var(--weight-medium);
-  transition: all var(--transition-normal);
+  transition: all var(--transition-fast);
   cursor: pointer;
 }
 
 .skills-list li:hover {
   transform: scale(0.95);
-  opacity: 0.65;
+  opacity: 0.78;
 }
 
 /* Projects Section */
@@ -602,7 +602,7 @@ a:hover {
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.5rem;
   margin: var(--space-sm) 0;
 }
 
